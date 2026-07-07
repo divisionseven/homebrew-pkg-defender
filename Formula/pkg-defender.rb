@@ -16,7 +16,7 @@
 class PkgDefender < Formula
   desc "Stop supply chain attacks before they reach your machine or CI pipeline"
   homepage "https://github.com/divisionseven/pkg-defender"
-  version "1.0.3"
+  version "1.0.4"
   license "Apache-2.0"
 
   livecheck do
@@ -26,8 +26,8 @@ class PkgDefender < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.3/pkgd-darwin-arm64"
-      sha256 "080b26cff27e5cb3bfd677503b9d04d5070ddf0434db27c8929fb25dab34832c"
+      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.4/pkgd-darwin-arm64"
+      sha256 "118aa7b6fac0060259fcef4226423ad4c19e0a845971cba4af1f4a40374597c7"
 
       define_method(:install) do
         bin.install "pkgd-darwin-arm64" => "pkgd"
@@ -35,8 +35,8 @@ class PkgDefender < Formula
     end
 
     on_intel do
-      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.3/pkgd-darwin-amd64"
-      sha256 "8cbe6f63a409c8bb614480ffe7070342bde35471237fa070bfaff69205ced1e7"
+      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.4/pkgd-darwin-amd64"
+      sha256 "fbc6f0eb2570370356e9c6c0df5f2e794ba69c30e58dde79c1b2573f5210d7de"
 
       define_method(:install) do
         bin.install "pkgd-darwin-amd64" => "pkgd"
@@ -46,8 +46,8 @@ class PkgDefender < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.3/pkgd-linux-amd64"
-      sha256 "706315fbb183d4f41ecc431c82c5918cb976f781314391d32201ddacc45b1669"
+      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.4/pkgd-linux-amd64"
+      sha256 "0c6e4f11d9e7e0367379d3102b793358e47c7dd6070e69780deb0412cbb57aaf"
 
       define_method(:install) do
         bin.install "pkgd-linux-amd64" => "pkgd"
