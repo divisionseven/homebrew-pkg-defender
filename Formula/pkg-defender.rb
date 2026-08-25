@@ -10,13 +10,15 @@
 #   brew tap divisionseven/pkg-defender
 #   brew install pkg-defender
 #
-# SHA256 values are placeholders; the release workflow auto-replaces them.
+# SHA256/URL values track the latest stable release; the release
+# pipeline updates them each release. There is deliberately NO `version` stanza —
+# Homebrew derives it from the URL (an explicit stanza fails `brew audit --new`
+# since the 2026-07-28 upstream redundancy check).
 #
 
 class PkgDefender < Formula
-  desc "Stop supply chain attacks before they reach your machine or CI pipeline"
+  desc "Stop supply chain attacks before they reach your machine"
   homepage "https://github.com/divisionseven/pkg-defender"
-  version "1.0.7"
   license "Apache-2.0"
 
   livecheck do
