@@ -28,8 +28,8 @@ class PkgDefender < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.9/pkgd-darwin-arm64"
-      sha256 "266437b7b88f897da908f8548f9cf14fd0098ec9e070df43865991eb5eb2350f"
+      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.10/pkgd-darwin-arm64"
+      sha256 "114831b3e660902d0cbe6eb37fa2e817c517c029c9858f113df667e83ff15adc"
 
       define_method(:install) do
         bin.install "pkgd-darwin-arm64" => "pkgd"
@@ -37,8 +37,8 @@ class PkgDefender < Formula
     end
 
     on_intel do
-      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.9/pkgd-darwin-amd64"
-      sha256 "b69f5129ac86936d767598532a68a84f9ea6f883ddc569927ab7f642f7ff2000"
+      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.10/pkgd-darwin-amd64"
+      sha256 "48a5d6d8a9414521e653faca06db370c008b7135510e92518b1695f87254e78c"
 
       define_method(:install) do
         bin.install "pkgd-darwin-amd64" => "pkgd"
@@ -48,8 +48,8 @@ class PkgDefender < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.9/pkgd-linux-amd64"
-      sha256 "74de9d745ecc185e550dd852f1dffaca22d96fa0d102ade32d779b37b7fd6d70"
+      url "https://github.com/divisionseven/pkg-defender/releases/download/v1.0.10/pkgd-linux-amd64"
+      sha256 "84f6623cb0d7ac8685ac316fa7992fb053149471fee6777fa90802993d707bed"
 
       define_method(:install) do
         bin.install "pkgd-linux-amd64" => "pkgd"
